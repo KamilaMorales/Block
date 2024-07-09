@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    min-height: 100vh; 
+}
+
+/*----------------------------------------------------------------------------------------------------------------*/
+
+.container-1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.item-1 {
+    width: 40px;
+    height: 50px;
+    margin-left: 50px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+}
+
+.item-2 ul {
+    display: flex;
+}
+
+.item-2 ul li {
+    list-style-type: none;
+    margin: 30px;
+    font-size: 20px;
+}
+
+.item-2 ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.item-2 ul li a:hover {
+    background-color: black;
+    color: white;
+    border-radius: 0 20px 20px 20px;
+    padding: 10px 20px;
+}
+
+/*---------------------------------------------------------------------------------------------------------------*/
+
+.container-2 {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    flex-grow: 1; 
+}
+
+.item--1 {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.p-1 {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.30);
+}
+
+.botones {
+    background-color: black;
+    color: white;
+    border-radius: 0 20px 20px 20px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.item--2img {
+    width: 500px;
+    height: 335px;
+}
+
+/*---------------------------------------------------------------------------------------------------------------*/
+
+.container-3 {
+    display: flex;
+    justify-content: space-evenly;
+    height: 240px;
+    padding: 20px;
+    background-color: black;
+}
+
+
+.fa-pen-to-square,
+.fa-mobile-screen,
+.fa-laptop,
+.fa-language {
+    color: white;
+}
+
+h5 {
+    color: white;
+}
